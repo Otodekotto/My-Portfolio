@@ -11,7 +11,7 @@ import {
 export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar sx={{ position: "fixed", top: 0 }}>
         <Toolbar>
           <IconButton
             size="large"

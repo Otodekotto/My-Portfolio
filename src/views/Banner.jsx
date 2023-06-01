@@ -22,7 +22,12 @@ const Banner = () => {
       <Grid
         container
         spacing={2}
-        sx={{ marginTop: 2, justifyContent: "center", textAlign: "center" }}
+        sx={{
+          marginTop: 2,
+          justifyContent: "center",
+          textAlign: "center",
+          mt: 15,
+        }}
       >
         <Grid item xs={8}>
           <TypeOutText />
