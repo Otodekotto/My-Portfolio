@@ -1,9 +1,9 @@
-import { Box, Typography, Container } from "@mui/material"
-import CurvyLines from "../../img/appCurvyLines.png"
+import { Box, Typography, Container } from "@mui/material";
+import CurvyLines from "../../img/appCurvyLines.png";
 
 export default function AboutMeText() {
   return (
-    <div>
+    <div id="about-me">
       <Box
         alignItems="center"
         sx={{
@@ -16,7 +16,7 @@ export default function AboutMeText() {
         }}
         component="section"
       >
-        <Container sx={{ mt: 15, mb: 15, position: "relative" }}>
+        <Container sx={{ mt: 10, mb: 10, position: "relative" }}>
           <Box
             component="img"
             src={CurvyLines}
@@ -24,37 +24,26 @@ export default function AboutMeText() {
             sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
           />
 
-          <Typography variant="h4" gutterBottom fontFamily="Roboto Mono">
+          <Typography
+            variant="h3"
+            gutterBottom
+            fontFamily="Roboto Mono"
+            color="blue"
+          >
             About Me
           </Typography>
-          <Typography variant="h5" sx={{ marginBottom: 1 }}>
-            "Hello! My name is Jonas Duong, and I'm a software developer with a
-            passion for drawing and programming. I studied .Net Development at
-            IT-Högskolan, where I gained a solid foundation in software
-            development principles and techniques.
+          <Typography variant="h4" gutterBottom fontFamily="Roboto Mono">
+            A dedicated Software Developer!
           </Typography>
           <Typography variant="h5" sx={{ marginBottom: 1 }}>
-            During my time at IT-Högskolan, I had the opportunity to intern at
-            Vision A Unity as a software developer and game developer. It was an
-            incredible experience that allowed me to apply my skills in a
-            professional setting. I had the chance to work with Unity, a popular
-            game development platform, and created a game as part of my
-            internship. It was a challenging and rewarding project that further
-            fueled my enthusiasm for programming.
-          </Typography>
-          <Typography variant="h5" sx={{ marginBottom: 1 }}>
-            I also worked on a desktop application during my internship. This
-            project allowed me to explore different aspects of software
-            development, from user interface design to implementing
-            functionality.
-          </Typography>
-          <Typography variant="h5" sx={{ marginBottom: 1 }}>
-            Currently I'm working as a Fullstack developer at Experis Academy,
-            expanding expertise in React, JavaScript, Angular, and honing skills
-            in C# and SQL.
+            I am a motivated individual who is constantly driven to grow and
+            develop professionally in my field. I'm not afraid to explore new
+            technologies and methods to enhance my skills and performance.
+            Solving problems is part of my passion, and I believe that every
+            challenge is an opportunity to achieve success.
           </Typography>
         </Container>
       </Box>
     </div>
-  )
+  );
 }

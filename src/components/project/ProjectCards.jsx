@@ -15,7 +15,7 @@ export default function ProjectCards() {
     window.open(url, "_blank");
   };
   return (
-    <div>
+    <div div id="project">
       <Box
         sx={{
           display: "flex",
