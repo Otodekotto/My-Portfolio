@@ -9,6 +9,7 @@ import { Box } from "@mui/material";
 import PokemonTrainer from "../../img/PokemonTrainer.png";
 import MefitBackend from "../../img/ERDMefit.png";
 import MefitFrontEnd from "../../img/MefitFrontEnd.png";
+import KomputerStore from "../../img/KomputerStore.png";
 
 export default function ProjectCards() {
   const handleClick = (url) => {
@@ -116,6 +117,85 @@ export default function ProjectCards() {
               size="small"
               onClick={() =>
                 handleClick("https://github.com/AdamNymanExperis/mefit_backend")
+              }
+            >
+              Github
+            </Button>
+          </CardActions>
+        </Card>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          justifyContent: "center",
+          textAlign: "center",
+          mt: 15,
+          mb: 15,
+        }}
+      >
+        <Card sx={{ maxWidth: 345 }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              DotNet-Assignment-RPG-Heroes
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              In this project, we're crafting a Hero Class and its four
+              subclasses: Mage, Ranger, Rogue, and Warrior. Heroes will possess
+              a Name, Level, Level Attributes, and Equipment. They can equip
+              armor and weapons, subject to specific requirements; failure
+              triggers an exception message. Incorporate Test-Driven Development
+              (TDD) by writing tests before coding. Define test cases for Hero
+              Class and subclasses, focusing on attributes, equipment, and
+              damage calculations. Ensure each test fails initially and then
+              code to pass the tests, promoting code reliability and
+              correctness.
+            </Typography>
+          </CardContent>
+          <Box sx={{ flexGrow: 1 }} />
+          <CardActions>
+            <Button
+              size="small"
+              onClick={() =>
+                handleClick(
+                  "https://github.com/Otodekotto/DotNet-Assignment-RPG-Heroes"
+                )
+              }
+            >
+              Github
+            </Button>
+          </CardActions>
+        </Card>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={KomputerStore}
+            alt="Chevrolet"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              KomputerStore
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              A Fun Javascript Project called "Komputer Store" The player can
+              buy Computer and loan money from the bank.
+            </Typography>
+          </CardContent>
+          <Box sx={{ flexGrow: 1 }} />
+          <CardActions>
+            <Button
+              size="small"
+              onClick={() => handleClick("https://otodekotto.github.io/public")}
+            >
+              Website
+            </Button>
+            <Button
+              size="small"
+              onClick={() =>
+                handleClick(
+                  "https://github.com/Otodekotto/otodekotto.github.io"
+                )
               }
             >
               Github
