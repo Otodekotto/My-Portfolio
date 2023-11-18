@@ -1,3 +1,3 @@
 # portfolio
  
-Deployed: [Website](my-portfolio-zeta-beryl.vercel.app)
+Deployed: https://my-portfolio-zeta-beryl.vercel.app
