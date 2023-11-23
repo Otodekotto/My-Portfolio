@@ -54,7 +54,7 @@ const BlackStrips = () => {
           top: 0,
           left: "33%",
           width: "33%",
-          height: "100%",
+          height: "110%",
           marginTop: "-10px",
           backgroundColor: "black",
           zIndex: 1,
