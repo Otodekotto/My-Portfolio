@@ -5,6 +5,7 @@ import BannerBackgroundImg from "../img/BannerBackground.jpg";
 const Project = () => {
   return (
     <div
+      id="project"
       style={{
         backgroundImage: `url(${BannerBackgroundImg})`,
         backgroundPosition: "center",
@@ -12,9 +13,7 @@ const Project = () => {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         alignItems: "center",
-        textAlign: "center",
       }}
     >
       <Box

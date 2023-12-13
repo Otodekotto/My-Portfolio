@@ -10,21 +10,21 @@ import PokemonTrainer from "../../img/PokemonTrainer.png";
 import MefitBackend from "../../img/ERDMefit.png";
 import MefitFrontEnd from "../../img/MefitFrontEnd.png";
 import KomputerStore from "../../img/KomputerStore.png";
+import PokemonPopUp from "../../img/Popupshop.png";
 
 export default function ProjectCards() {
   const handleClick = (url) => {
     window.open(url, "_blank");
   };
+
   return (
-    <div div id="project">
+    <div>
       <Box
         sx={{
           display: "flex",
           gap: 2,
           justifyContent: "center",
           textAlign: "center",
-          mt: 15,
-          mb: 15,
         }}
       >
         <Card sx={{ maxWidth: 345 }}>
@@ -65,6 +65,85 @@ export default function ProjectCards() {
             </Button>
           </CardActions>
         </Card>
+
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia component="img" height="140" image={PokemonPopUp} />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Pokemon Pop Up Shop
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Dive into my React pop-up shop on Vercel, seamlessly integrating
+              PokeAPI for randomized items. Its sleek design and smooth
+              animations showcase my commitment to modern, user-friendly web
+              solutions—a dynamic blend of creativity and technology.
+            </Typography>
+          </CardContent>
+
+          <CardActions>
+            <Button
+              size="small"
+              onClick={() =>
+                handleClick(
+                  "https://github.com/Otodekotto/collect-pokemon-card"
+                )
+              }
+            >
+              Github
+            </Button>
+            <Button
+              size="small"
+              onClick={() =>
+                handleClick("https://collect-pokemon-card.vercel.app/")
+              }
+            >
+              Website
+            </Button>
+          </CardActions>
+        </Card>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              DotNet-Assignment-RPG-Heroes
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              In this project, we're crafting a Hero Class and its four
+              subclasses: Mage, Ranger, Rogue, and Warrior. Heroes will possess
+              a Name, Level, Level Attributes, and Equipment. They can equip
+              armor and weapons, subject to specific requirements; failure
+              triggers an exception message. Incorporate Test-Driven Development
+              (TDD) by writing tests before coding. Define test cases for Hero
+              Class and subclasses, focusing on attributes, equipment, and
+              damage calculations. Ensure each test fails initially and then
+              code to pass the tests, promoting code reliability and
+              correctness.
+            </Typography>
+          </CardContent>
+          <Box sx={{ flexGrow: 1 }} />
+          <CardActions>
+            <Button
+              size="small"
+              onClick={() =>
+                handleClick(
+                  "https://github.com/Otodekotto/DotNet-Assignment-RPG-Heroes"
+                )
+              }
+            >
+              Github
+            </Button>
+          </CardActions>
+        </Card>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          justifyContent: "center",
+          textAlign: "center",
+          mt: 15,
+          mb: 15,
+        }}
+      >
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
@@ -123,49 +202,7 @@ export default function ProjectCards() {
             </Button>
           </CardActions>
         </Card>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          gap: 2,
-          justifyContent: "center",
-          textAlign: "center",
-          mt: 15,
-          mb: 15,
-        }}
-      >
-        <Card sx={{ maxWidth: 345 }}>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              DotNet-Assignment-RPG-Heroes
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              In this project, we're crafting a Hero Class and its four
-              subclasses: Mage, Ranger, Rogue, and Warrior. Heroes will possess
-              a Name, Level, Level Attributes, and Equipment. They can equip
-              armor and weapons, subject to specific requirements; failure
-              triggers an exception message. Incorporate Test-Driven Development
-              (TDD) by writing tests before coding. Define test cases for Hero
-              Class and subclasses, focusing on attributes, equipment, and
-              damage calculations. Ensure each test fails initially and then
-              code to pass the tests, promoting code reliability and
-              correctness.
-            </Typography>
-          </CardContent>
-          <Box sx={{ flexGrow: 1 }} />
-          <CardActions>
-            <Button
-              size="small"
-              onClick={() =>
-                handleClick(
-                  "https://github.com/Otodekotto/DotNet-Assignment-RPG-Heroes"
-                )
-              }
-            >
-              Github
-            </Button>
-          </CardActions>
-        </Card>
+
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
